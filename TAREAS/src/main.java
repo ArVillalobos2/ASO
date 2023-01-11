@@ -45,7 +45,7 @@ public class main {
             System.out.println(vacio.get(i)*vacio.get(i));
         }*/
 
-        Map<Integer, Integer> map1 = list.stream()
+        /*Map<Integer, Integer> map1 = list.stream()
                 .map(i->i*i)
                 .sorted()
                 .distinct()
@@ -56,7 +56,13 @@ public class main {
 
         Integer[] a = map1.entrySet().stream()
                 .map(Map.Entry::getValue)
-                .toArray(Integer[]::new);
+                .toArray(Integer[]::new);*/
+
+        list.stream()
+                .map(i->i*i)
+                .distinct()
+                .sorted(Comparator.reverseOrder())
+                .forEach(System.out::println);//Ordenarlos de mayor a menor
 
         //for (Integer numero : vacio){
         //   if (numero*numero != 4){
