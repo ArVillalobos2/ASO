@@ -4,8 +4,21 @@ import java.util.function.*;
 import java.util.stream.Collectors;
 
 public class main {
-    static int j;
+
     public static void main(String[] args) {
+
+        List lista = new ArrayList<>();
+        lista.add(10);
+        int element = (int) lista.get(1);
+        System.out.println(element);
+
+    }
+
+}
+
+
+
+
 
         //Consumer<Integer>pruebaCons=n-> System.out.println(n);
         //BiConsumer<Integer,String>pruebaBiCons=(n,m)-> System.out.println(m + n);
@@ -31,7 +44,7 @@ public class main {
         //Consumer Datos de entrada pero no regresa nada; (Biconsumer)
         //Streams
 
-        List<Integer> list = Arrays.asList(3,5,2,6,8,2,6,9,2,2);
+        //List<Integer> list = Arrays.asList(3,5,2,6,8,2,6,9,2,2);
         /*List<Integer> vacio = new ArrayList<>();
         for (int i = 0; i<list.size(); i++){
             if (vacio.contains(list.get(i))){
@@ -58,11 +71,11 @@ public class main {
                 .map(Map.Entry::getValue)
                 .toArray(Integer[]::new);*/
 
-        list.stream()
+        /*list.stream()
                 .map(i->i*i)
                 .distinct()
                 .sorted(Comparator.reverseOrder())
-                .forEach(System.out::println);//Ordenarlos de mayor a menor
+                .forEach(System.out::println);//Ordenarlos de mayor a menor*/
 
         //for (Integer numero : vacio){
         //   if (numero*numero != 4){
@@ -77,6 +90,3 @@ public class main {
         // USAR SET PARA NO REPETIR ELEMENTOS EN UNA LISTA
         // USAR SORTEDSET PARA ORDENAR LA LISTA
 
-    }
-
-}
